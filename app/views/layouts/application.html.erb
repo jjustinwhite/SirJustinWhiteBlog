@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sir Justin White</title>
+  <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<!--TEMP COMMENT OUT <body style="background: #EEEEEE;"> -->
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <ul class="nav">
+      	<li class ="active"><a class="brand" href="/">Justin White</a></li>
+  		<li><a href="/posts">Blog</a></li>
+  		<li><a href="http://photoshare-jw.herokuapp.com/">PhotoShare</a></li>
+	  </ul>
+    </div>
+  </div>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
